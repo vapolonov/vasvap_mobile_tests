@@ -17,7 +17,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     String username = browserstackConfig.username();
     String password = browserstackConfig.password();
     String appUrl = browserstackConfig.appUrl();
-    String remoteUrl = browserstackConfig.remoteUrl();
+    static String remoteUrl = browserstackConfig.remoteUrl();
 
     public static URL getBrowserstackUrl() {
         try {
@@ -30,11 +30,11 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
         // Set your access credentials
-        desiredCapabilities.setCapability("browserstack.user", "qaguru_B5xciN");
-        desiredCapabilities.setCapability("browserstack.key", "TzFxj7ss7siMKTxUURLy");
+        desiredCapabilities.setCapability("browserstack.user", username);
+        desiredCapabilities.setCapability("browserstack.key", password);
 
         // Set URL of the application under test
-        desiredCapabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
+        desiredCapabilities.setCapability("app", appUrl);
 
         // Specify device and os_version for testing
         desiredCapabilities.setCapability("device", "Google Pixel 3");
