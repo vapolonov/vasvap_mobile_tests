@@ -95,7 +95,7 @@ allure serve build/allure-results
 
 ## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
 
-![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_telegram_1.jpg)
-![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_telegram_2.jpg)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram1.jpg)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram2.jpg)
 
 :heart: <a target="_blank" href="https://t.me/vasiliy_apolonov">@vasiliy_apolonov</a>
