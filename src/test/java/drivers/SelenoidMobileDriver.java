@@ -18,7 +18,7 @@ public class SelenoidMobileDriver implements WebDriverProvider {
 
     static String user = selenoidConfig.selenoidUser();
     static String password = selenoidConfig.selenoidPassword();
-    String apkUrl = selenoidConfig.apkUrl();
+    static String apkUrl = selenoidConfig.apkUrl();
 
 
     public static URL getSelenoidUrl() {

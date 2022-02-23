@@ -9,7 +9,7 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Tag("selenoiddeviceHost=")
+@Tag("selenoid")
 public class AndroidSelenoidTests extends SelenoidTestBase {
 
     @Test
