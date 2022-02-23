@@ -1,5 +1,5 @@
 # Проект по автоматизации для мобильного приложения Wikipedia
-
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_wikipedia_logo.png)
 ## :pushpin: Используемые технологии и инструменты
 ![Java](https://github.com/vapolonov/vapolonov/blob/main/vasvap_java_logo.png "Java")&nbsp;
 ![IntelliJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_idea_logo.png "IntelliJ IDEA")&nbsp;
@@ -15,7 +15,7 @@
 ![Selenoid](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenoid_logo.png "Selenoid")&nbsp;
 ![Jira](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jira_logo.png "Jira")&nbsp;
 ![Telegram](https://github.com/vapolonov/vapolonov/blob/main/vasvap_telegram_logo.png "Telegram")&nbsp;
-____
+
 > Автотесты написаны на ***`Java`*** с использованием фреймворка ***`Selenide`***.
 >
 > Для сборки проекта используется ***`Gradle`***.
@@ -31,3 +31,26 @@ ____
 > ***`BrowserStack`*** используется для запуска приложения на удаленном мобильном устройстве.
 >
 > ***`Allure Report`***, ***`Allure TestOps`***, ***`Jira`***, ***`Telegram Bot`*** используются для визуализации результатов тестирования.
+
+## :rocket: Реализованы следующие проверки
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
+> :heavy_check_mark: Отображение результатов поиска
+> 
+> :heavy_check_mark: Проверка первых четырех экранов Getting Started
+
+## :computer: Запуск тестов из терминала
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Запуск тестов с заполненным remote.properties:
+
+```bash
+gradle clean ${DEVICE_TEST} -DdeviceHost=${DEVICE_HOST}
+```
+> где
+> ***`DEVICE_TEST`*** - список тестов, сгруппированных по параметру тега. В зависимости от выбранного параметра, будут запускаться определенные группы тестов.
+> ***`DEVICE_HOST`*** - список параметров для запуска приложения. В зависимости от выбранного параметра, приложение будет запускаться на соответствующих стендах.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Формирование отчета allure:
+```bash
+allure serve build/allure-results
+```
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/vasvap_diploma_mobile/)
