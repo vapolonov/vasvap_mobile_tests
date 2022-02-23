@@ -18,9 +18,10 @@ public class SelenoidMobileDriver implements WebDriverProvider {
 
     static String user = selenoidConfig.selenoidUser();
     static String password = selenoidConfig.selenoidPassword();
+    String apkUrl = selenoidConfig.apkUrl();
 
 
-    public static URL getAppiumServerUrl() {
+    public static URL getSelenoidUrl() {
         try {
             return new URL("https://" + user + ":" + password + "@selenoid.autotests.cloud/wd/hub");
         } catch (MalformedURLException e) {
@@ -42,12 +43,12 @@ public class SelenoidMobileDriver implements WebDriverProvider {
         desiredCapabilities.setCapability("appActivity", "org.wikipedia.main.MainActivity");
         desiredCapabilities.setCapability("app", apkUrl());
 
-        return new AndroidDriver(getAppiumServerUrl(), desiredCapabilities);
+        return new AndroidDriver(getSelenoidUrl(), desiredCapabilities);
     }
 
     private URL apkUrl() {
         try {
-            return new URL("https://github.com/wikimedia/apps-android-wikipedia/releases/download/latest/app-alpha-universal-release.apk");
+            return new URL(apkUrl);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

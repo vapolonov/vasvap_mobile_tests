@@ -14,4 +14,7 @@ public interface SelenoidConfig extends Config {
     @Key("selenoidPassword")
     String selenoidPassword();
 
+    @Key("apkUrl")
+    String apkUrl();
+
 }
