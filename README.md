@@ -89,9 +89,9 @@ allure serve build/allure-results
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_testops3.jpg)
 
-## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-342)
+## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-352)
 
-![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_jira.jpg)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_jira.jpg)
 
 ## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
 
