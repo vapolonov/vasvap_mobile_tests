@@ -18,6 +18,11 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     String password = browserstackConfig.password();
     String appUrl = browserstackConfig.appUrl();
     static String remoteUrl = browserstackConfig.remoteUrl();
+    String device = browserstackConfig.device();
+    String osVersion = browserstackConfig.osVersion();
+    String project = browserstackConfig.project();
+    String build = browserstackConfig.build();
+    String name = browserstackConfig.name();
 
     public static URL getBrowserstackUrl() {
         try {
@@ -37,13 +42,13 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         desiredCapabilities.setCapability("app", appUrl);
 
         // Specify device and os_version for testing
-        desiredCapabilities.setCapability("device", "Google Pixel 3");
-        desiredCapabilities.setCapability("os_version", "9.0");
+        desiredCapabilities.setCapability("device", device);
+        desiredCapabilities.setCapability("os_version", osVersion);
 
         // Set other BrowserStack capabilities
-        desiredCapabilities.setCapability("project", "First Java Project");
-        desiredCapabilities.setCapability("build", "browserstack-build-1");
-        desiredCapabilities.setCapability("name", "first_test");
+        desiredCapabilities.setCapability("project", project);
+        desiredCapabilities.setCapability("build", build);
+        desiredCapabilities.setCapability("name", name);
 
         // Initialise the remote Webdriver using BrowserStack remote URL
         // and desired capabilities defined above
