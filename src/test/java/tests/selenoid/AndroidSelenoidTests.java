@@ -3,14 +3,14 @@ package tests.selenoid;
 import io.appium.java_client.MobileBy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Tag("selenoid")
+@Tags({@Tag("android"),@Tag("selenoid")})
 public class AndroidSelenoidTests extends SelenoidTestBase {
 
     @Test
@@ -22,7 +22,6 @@ public class AndroidSelenoidTests extends SelenoidTestBase {
         step("Enter a search query", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("BrowserStack"));
         step("Check that search results are not empty", () ->
-                //$$(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(sizeGreaterThan(0)));
-                $$(byClassName("android.widget.TextView")).shouldHave(sizeGreaterThan(0)));
+                $$(MobileBy.id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(sizeGreaterThan(0)));
     }
 }

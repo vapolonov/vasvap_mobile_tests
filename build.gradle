@@ -69,3 +69,9 @@ task browserstack_test(type: Test) {
     }
     systemProperty "deviceHost", "browserstack"
 }
+
+task browserstack_test(type: Test) {
+    useJUnitPlatform {
+        includeTags 'android'
+    }
+}
