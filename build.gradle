@@ -56,12 +56,6 @@ tasks.withType(Test) {
     }
 }
 
-task local_test(type: Test) {
-    useJUnitPlatform {
-        includeTags 'local'
-    }
-}
-
 task selenoid_test(type: Test) {
     useJUnitPlatform {
         includeTags 'selenoid'
