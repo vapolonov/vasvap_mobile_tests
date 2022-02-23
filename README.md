@@ -54,3 +54,23 @@ gradle clean ${DEVICE_TEST} -DdeviceHost=${DEVICE_HOST}
 allure serve build/allure-results
 ```
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/vasvap_diploma_mobile/)
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure.jpg)
+
+После завершения сборки для просмотра результатов необходимо напротив нужной сборки кликнуть на значок ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Allure Report
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure2.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Просмотр отчета о результатах прохождения тестов в [Allure Report](https://jenkins.autotests.cloud/job/vasvap_diploma_mobile/18/allure/)
+
+### :pushpin: Общая информация
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_mobile_allure3.jpg)
+
+### :pushpin: Список тестов c описанием шагов и визуализацией результатов
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_mobile_allure4.jpg)
+
+### ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_selenoid_logo_sm.png)&nbsp; Демонстрация прохождения теста в Selenoid
+
+
