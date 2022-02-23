@@ -55,7 +55,7 @@ tasks.withType(Test) {
         }
     }
 }
-
+/*
 task selenoid_test(type: Test) {
     useJUnitPlatform {
         includeTags 'selenoid'
@@ -69,3 +69,5 @@ task browserstack_test(type: Test) {
     }
     systemProperty "deviceHost", "browserstack"
 }
+
+ */
