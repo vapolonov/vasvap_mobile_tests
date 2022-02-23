@@ -89,13 +89,13 @@ allure serve build/allure-results
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_testops3.jpg)
 
-## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-352)
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-352)
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_jira.jpg)
 
-## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
 
-![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram1.jpg)
-![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram2.jpg)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram1.png)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram2.png)
 
 :heart: <a target="_blank" href="https://t.me/vasiliy_apolonov">@vasiliy_apolonov</a>
