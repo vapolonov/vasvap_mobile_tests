@@ -65,11 +65,11 @@ allure serve build/allure-results
 
 ### :pushpin: Общая информация
 
-![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_mobile_allure3.jpg)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure3.jpg)
 
 ### :pushpin: Список тестов c описанием шагов и визуализацией результатов
 
-![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_mobile_allure4.jpg)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure4.jpg)
 
 ### ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_selenoid_logo_sm.png)&nbsp; Демонстрация прохождения теста в Selenoid
 
