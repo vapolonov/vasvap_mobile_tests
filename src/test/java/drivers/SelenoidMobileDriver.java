@@ -16,13 +16,13 @@ public class SelenoidMobileDriver implements WebDriverProvider {
 
     public static SelenoidConfig selenoidConfig = ConfigFactory.create(SelenoidConfig.class);
 
-    String user = selenoidConfig.selenoidUser();
-    String password = selenoidConfig.selenoidPassword();
+    static String user = selenoidConfig.selenoidUser();
+    static String password = selenoidConfig.selenoidPassword();
 
 
     public static URL getAppiumServerUrl() {
         try {
-            return new URL("https://\" + user + \":\" + password + \"@selenoid.autotests.cloud/wd/hub");
+            return new URL("https://" + user + ":" + password + "@selenoid.autotests.cloud/wd/hub");
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
