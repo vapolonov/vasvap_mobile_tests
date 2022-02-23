@@ -71,6 +71,6 @@ allure serve build/allure-results
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure4.jpg)
 
-### ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_selenoid_logo_sm.png)&nbsp; Демонстрация прохождения теста в Selenoid
+### ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_bstack_logo_s.png)&nbsp; Демонстрация прохождения теста в Browserstack
 
-
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/browserstack.gif)
