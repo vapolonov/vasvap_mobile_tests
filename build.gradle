@@ -60,14 +60,14 @@ task selenoid_test(type: Test) {
     useJUnitPlatform {
         includeTags 'selenoid'
     }
-    systemProperty "deviceHost", "selenoid"
+    //systemProperty "deviceHost", "selenoid"
 }
 
 task browserstack_test(type: Test) {
     useJUnitPlatform {
         includeTags 'browserstack'
     }
-    systemProperty "deviceHost", "browserstack"
+    //systemProperty "deviceHost", "browserstack"
 }
 
 task android_test(type: Test) {
