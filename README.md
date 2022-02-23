@@ -74,3 +74,7 @@ allure serve build/allure-results
 ### ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_bstack_logo_s.png)&nbsp; Демонстрация прохождения теста в Browserstack
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/browserstack.gif)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1032/dashboards)
+
+### :pushpin: Главный дашборд
