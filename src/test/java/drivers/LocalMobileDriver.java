@@ -11,15 +11,6 @@ import java.net.URL;
 import static utils.FileUtils.getAbsolutePath;
 
 public class LocalMobileDriver implements WebDriverProvider {
-/*
-    public static BrowserstackConfig browserstackConfig = ConfigFactory.create(BrowserstackConfig.class);
-
-    String username = browserstackConfig.username();
-    String password = browserstackConfig.password();
-    String appUrl = browserstackConfig.appUrl();
-    static String remoteUrl = browserstackConfig.remoteUrl();
-
- */
 
     public static URL getBrowserstackUrl() {
         try {
@@ -33,10 +24,10 @@ public class LocalMobileDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
 
-        //desiredCapabilities.setCapability("deviceName", "0681525177101408");
-        //desiredCapabilities.setCapability("deviceName", "Pixel_4_API_30");
-        //desiredCapabilities.setCapability("platformName", "android");
-        //desiredCapabilities.setCapability("version", "11.0");
+        desiredCapabilities.setCapability("deviceName", "0681525177101408");
+        desiredCapabilities.setCapability("deviceName", "Pixel_4_API_30");
+        desiredCapabilities.setCapability("platformName", "android");
+        desiredCapabilities.setCapability("version", "11.0");
         desiredCapabilities.setCapability("locale", "en");
         desiredCapabilities.setCapability("language", "en");
         desiredCapabilities.setCapability("appPackage", "org.wikipedia.alpha");

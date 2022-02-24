@@ -8,13 +8,9 @@ import org.aeonbits.owner.Config;
         "classpath:config/selenoid.properties"
 })
 public interface SelenoidConfig extends Config {
-    @Key("selenoidUser")
+
     String selenoidUser();
-
-    @Key("selenoidPassword")
     String selenoidPassword();
-
-    @Key("apkUrl")
     String apkUrl();
 
 }
