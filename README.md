@@ -54,3 +54,48 @@ gradle clean ${DEVICE_TEST} -DdeviceHost=${DEVICE_HOST}
 allure serve build/allure-results
 ```
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/vasvap_diploma_mobile/)
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure.jpg)
+
+После завершения сборки для просмотра результатов необходимо напротив нужной сборки кликнуть на значок ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Allure Report
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure2.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Просмотр отчета о результатах прохождения тестов в [Allure Report](https://jenkins.autotests.cloud/job/vasvap_diploma_mobile/18/allure/)
+
+### :pushpin: Общая информация
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure3.jpg)
+
+### :pushpin: Список тестов c описанием шагов и визуализацией результатов
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_allure4.jpg)
+
+### ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_bstack_logo_s.png)&nbsp; Демонстрация прохождения теста в Browserstack
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/browserstack.gif)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1049/dashboards)
+
+### :pushpin: Главный дашборд
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_testops.jpg)
+
+### :pushpin: Запуски прогонов тестов
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_testops2.jpg)
+
+### :pushpin: Список тест-кейсов
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_testops3.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-352)
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_jira.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram1.png)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram2.png)
+
+:heart: <a target="_blank" href="https://t.me/vasiliy_apolonov">@vasiliy_apolonov</a>
