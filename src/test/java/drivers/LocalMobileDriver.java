@@ -24,7 +24,7 @@ public class LocalMobileDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
 
-        desiredCapabilities.setCapability("deviceName", "0681525177101408");
+       // desiredCapabilities.setCapability("deviceName", "0681525177101408");
         desiredCapabilities.setCapability("deviceName", "Pixel_4_API_30");
         desiredCapabilities.setCapability("platformName", "android");
         desiredCapabilities.setCapability("version", "11.0");
