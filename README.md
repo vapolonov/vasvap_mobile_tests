@@ -37,6 +37,10 @@
 > :heavy_check_mark: Отображение результатов поиска
 > 
 > :heavy_check_mark: Проверка первых четырех экранов Getting Started
+>
+>:heavy_check_mark: Изменение темы оформления приложения
+>
+>:heavy_check_mark: Добавление дополнительного языка приложения - "Русский"
 
 ## :computer: Запуск тестов из терминала
 
@@ -75,6 +79,14 @@ allure serve build/allure-results
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/browserstack.gif)
 
+## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_bstack_logo_s.png)&nbsp; Список тестов в прогоне на Browserstack
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_browserstack.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_bstack_logo_s.png)&nbsp; Подробности и визуализация тестов в Browserstack
+
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_browserstack2.jpg)
+
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1049/dashboards)
 
 ### :pushpin: Главный дашборд
@@ -96,6 +108,6 @@ allure serve build/allure-results
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
 
 ![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram1.png)
-![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram2.png)
+![](https://github.com/vapolonov/vasvap_mobile_tests/blob/main/img/vasvap_mobile_telegram3.jpg)
 
 :heart: <a target="_blank" href="https://t.me/vasiliy_apolonov">@vasiliy_apolonov</a>
