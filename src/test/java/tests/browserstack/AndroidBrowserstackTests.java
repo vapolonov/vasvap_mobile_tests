@@ -1,6 +1,7 @@
 package tests.browserstack;
 
 import io.appium.java_client.MobileBy;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -17,7 +18,8 @@ import static io.qameta.allure.Allure.step;
 public class AndroidBrowserstackTests extends BrowserstackTestBase {
 
     @Test
-    @DisplayName("Search in Wikipedia mobile application")
+    @DisplayName("Search in Wikipedia")
+    @Description("Search in Wikipedia mobile application and check results")
     void searchTest() {
         step("Open search input", () ->
                 $(MobileBy.AccessibilityId("Search Wikipedia")).click());
@@ -28,7 +30,8 @@ public class AndroidBrowserstackTests extends BrowserstackTestBase {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Add Russian language")
+    @Description("Add Russian language to Wikipedia application")
     void addRussianLanguageTest() {
         step("Tap menu button", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click());

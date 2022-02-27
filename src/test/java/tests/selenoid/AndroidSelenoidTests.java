@@ -1,6 +1,7 @@
 package tests.selenoid;
 
 import io.appium.java_client.MobileBy;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -17,7 +18,8 @@ import static io.qameta.allure.Allure.step;
 public class AndroidSelenoidTests extends SelenoidTestBase {
 
     @Test
-    @DisplayName("Search in Wikipedia mobile application")
+    @DisplayName("Search in Wikipedia")
+    @Description("Search in Wikipedia mobile application and check results")
     void searchTest() {
         back();
         step("Open search input", () ->
@@ -29,7 +31,8 @@ public class AndroidSelenoidTests extends SelenoidTestBase {
     }
 
     @Test
-    @DisplayName("Check four screens 'Get started'")
+    @DisplayName("Get started")
+    @Description("Check four screens 'Get started'")
     void getStartedTest() {
         step("Check first screen", () -> {
             $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("The Free Encyclopedia …in over 300 languages"));
@@ -55,6 +58,8 @@ public class AndroidSelenoidTests extends SelenoidTestBase {
     }
 
     @Test
+    @DisplayName("Add Russian language")
+    @Description("Add Russian language to Wikipedia application")
     void addRussianLanguageTest() {
         step("Press 'ADD LANGUAGE' button", () -> {
             $(MobileBy.id("org.wikipedia.alpha:id/addLangContainer")).click();
@@ -67,7 +72,8 @@ public class AndroidSelenoidTests extends SelenoidTestBase {
     }
 
     @Test
-    @Tag("selenoid")
+    @DisplayName("Add Dark theme")
+    @Description("Add Dark theme to Wikipedia application")
     void addDarkThemeTest() {
         back();
         step("Open menu item 'More'", () ->
