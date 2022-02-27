@@ -66,10 +66,9 @@ public class AndroidLocalTests extends LocalTestBase {
 
     @Test
     void addDarkThemeTest() {
-        step("Open menu item 'More'", () -> {
-            back();
-            $(MobileBy.id("org.wikipedia.alpha:id/nav_more_container")).click();
-        });
+        back();
+        step("Open menu item 'More'", () ->
+                $(MobileBy.id("org.wikipedia.alpha:id/nav_more_container")).click());
         step("Select 'Settings' item", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/main_drawer_settings_container")).click());
         step("Select 'App theme' item in 'Setting' section", () ->
@@ -78,10 +77,9 @@ public class AndroidLocalTests extends LocalTestBase {
             $(MobileBy.id("org.wikipedia.alpha:id/theme_chooser_match_system_theme_switch")).click();
             $(MobileBy.id("org.wikipedia.alpha:id/button_theme_dark")).click();
         });
-        step("Verify that Dark theme was selected in Settings section", () -> {
-            back();
-            back();
-            $$(MobileBy.id("android:id/summary")).findBy(text("Dark")).shouldHave(text("Dark"));
-        });
+        back();
+        back();
+        step("Verify that Dark theme was selected in Settings section", () ->
+                $$(MobileBy.id("android:id/summary")).findBy(text("Dark")).shouldBe(visible));
     }
 }

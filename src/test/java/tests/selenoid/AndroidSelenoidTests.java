@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Tags({@Tag("android"),@Tag("selenoid")})
+@Tags({@Tag("android"), @Tag("selenoid")})
 public class AndroidSelenoidTests extends SelenoidTestBase {
 
     @Test
@@ -69,21 +69,19 @@ public class AndroidSelenoidTests extends SelenoidTestBase {
     @Test
     @Tag("selenoid")
     void addDarkThemeTest() {
-        step("Open menu item 'More'", () -> {
-            back();
-            $(MobileBy.id("org.wikipedia.alpha:id/nav_more_container")).click();
-        });
+        back();
+        step("Open menu item 'More'", () ->
+                $(MobileBy.id("org.wikipedia.alpha:id/nav_more_container")).click());
         step("Select 'Settings' item", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/main_drawer_settings_container")).click());
         step("Select 'App theme' item in 'Setting' section", () ->
                 $$(MobileBy.id("android:id/title")).findBy(text("App theme")).click());
-        step("Select Dark theme", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/button_theme_dark")).click();
-        });
+        step("Select Dark theme", () ->
+                $(MobileBy.id("org.wikipedia.alpha:id/button_theme_dark")).click());
+        back();
+        back();
         step("Verify that Dark theme was selected in Settings section", () -> {
-            back();
-            back();
-            $$(MobileBy.id("android:id/summary")).findBy(text("Dark")).shouldHave(text("Dark"));
+            $$(MobileBy.id("android:id/summary")).findBy(text("Dark")).shouldBe(visible);
         });
     }
 }

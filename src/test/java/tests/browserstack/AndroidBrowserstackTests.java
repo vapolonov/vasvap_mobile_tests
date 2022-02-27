@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
@@ -40,6 +41,6 @@ public class AndroidBrowserstackTests extends BrowserstackTestBase {
             $$(MobileBy.id("org.wikipedia.alpha:id/localized_language_name")).findBy(text("Русский")).click();
         });
         step("Verify that Wiki language = Русский", () ->
-                $$(MobileBy.id("android:id/summary")).findBy(text("Русский")).shouldHave(text("Русский")));
+                $$(MobileBy.id("android:id/summary")).findBy(text("Русский")).shouldBe(visible));
     }
 }
