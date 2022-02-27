@@ -82,6 +82,7 @@ public class AndroidSelenoidTests extends SelenoidTestBase {
         });
         step("Verify that Dark theme was selected in Settings section", () -> {
             back();
+            back();
             $$(MobileBy.id("android:id/summary")).findBy(text("Dark")).shouldHave(text("Dark"));
         });
     }
