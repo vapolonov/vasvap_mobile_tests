@@ -35,6 +35,6 @@ public class SelenoidTestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         closeWebDriver();
-        //Attach.attachVideo(sessionId);
+        Attach.attachVideo(sessionId);
     }
 }

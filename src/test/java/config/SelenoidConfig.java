@@ -12,5 +12,4 @@ public interface SelenoidConfig extends Config {
     String selenoidUser();
     String selenoidPassword();
     String apkUrl();
-
 }

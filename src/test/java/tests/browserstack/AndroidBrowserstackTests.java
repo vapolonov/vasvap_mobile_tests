@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tags({@Tag("android"), @Tag("browserstack")})
-public class AndroidBrowserstackTests extends TestBase {
+public class AndroidBrowserstackTests extends BrowserstackTestBase {
 
     @Test
     @DisplayName("Search in Wikipedia mobile application")

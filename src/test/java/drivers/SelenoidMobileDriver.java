@@ -38,7 +38,7 @@ public class SelenoidMobileDriver implements WebDriverProvider {
         desiredCapabilities.setCapability("locale", "en");
         desiredCapabilities.setCapability("language", "en");
         desiredCapabilities.setCapability("enableVNC", true);
-        desiredCapabilities.setCapability("enableVideo", false);
+        desiredCapabilities.setCapability("enableVideo", true);
         desiredCapabilities.setCapability("appPackage", "org.wikipedia.alpha");
         desiredCapabilities.setCapability("appActivity", "org.wikipedia.main.MainActivity");
         desiredCapabilities.setCapability("app", apkUrl());

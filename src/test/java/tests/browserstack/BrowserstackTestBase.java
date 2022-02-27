@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 import static helpers.Attach.getSessionId;
 
-public class TestBase {
+public class BrowserstackTestBase {
     @BeforeAll
     public static void setup() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
