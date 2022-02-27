@@ -76,6 +76,7 @@ public class AndroidLocalTests extends LocalTestBase {
                 $$(MobileBy.id("android:id/title")).findBy(text("App theme")).click());
         step("Select Dark theme", () -> {
             $(MobileBy.id("org.wikipedia.alpha:id/theme_chooser_match_system_theme_switch")).click();
+
             $(MobileBy.id("org.wikipedia.alpha:id/button_theme_dark")).click();
         });
         step("Verify that Dark theme was selected in Settings section", () -> {

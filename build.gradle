@@ -72,3 +72,8 @@ task android_test(type: Test) {
         includeTags 'android'
     }
 }
+/*
+test {
+    useJUnitPlatform()
+}
+*/
