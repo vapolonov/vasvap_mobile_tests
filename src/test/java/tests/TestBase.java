@@ -34,10 +34,12 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
+        Selenide.clearBrowserCookies();
+        Selenide.clearBrowserLocalStorage();
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
 
-        if (deviceHost.equals("selenoid") || deviceHost.equals("browserstack")) {
+        if ( /* deviceHost.equals("selenoid") || */ deviceHost.equals("browserstack")) {
             String sessionId = getSessionId();
             Attach.attachVideo(sessionId);
         }
