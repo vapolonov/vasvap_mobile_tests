@@ -84,6 +84,7 @@ public class AndroidSelenoidTests extends TestBase {
         step("Select Dark theme", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/button_theme_dark")).click());
         back();
+        back();
         step("Verify that Dark theme was selected in Settings section", () -> {
             $$(MobileBy.id("android:id/summary")).findBy(text("Dark")).shouldBe(visible);
         });
