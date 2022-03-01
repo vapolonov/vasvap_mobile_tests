@@ -1,4 +1,4 @@
-package tests.browserstack.samples;
+package tests;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.List;
 
 
-@Tags({@Tag("android"),@Tag("browserstack")})
+@Tag("browserstack")
 public class AndroidBrowserStackSample {
 
     @Test

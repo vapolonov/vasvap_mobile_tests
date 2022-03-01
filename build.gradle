@@ -67,9 +67,9 @@ task browserstack_test(type: Test) {
         includeTags 'browserstack'
     }
 }
-task android_test(type: Test) {
+task local_test(type: Test) {
     useJUnitPlatform {
-        includeTags 'android'
+        includeTags 'local'
     }
 }
 /*

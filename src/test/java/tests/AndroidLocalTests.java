@@ -1,4 +1,4 @@
-package tests.local;
+package tests;
 
 import io.appium.java_client.MobileBy;
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("local")
-public class AndroidLocalTests extends LocalTestBase {
+public class AndroidLocalTests extends TestBase {
 
     @Test
     @DisplayName("Search in Wikipedia mobile application")
