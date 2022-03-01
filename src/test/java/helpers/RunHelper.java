@@ -28,7 +28,7 @@ public class RunHelper {
                 return LocalMobileDriver.class;
             default:
                 throw new RuntimeException("Параметр -DdeviceHost может принимать только одно из следующих значений: " +
-                        "browserstack/selenoid/emulation/real");
+                        "browserstack/selenoid/local");
         }
     }
 }

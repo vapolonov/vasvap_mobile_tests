@@ -29,13 +29,13 @@ public class Attach {
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
     public static String attachVideo(String sessionId) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-                + Browserstack.videoUrl(sessionId)
+                + Browserstack.getVideoUrl(sessionId)
                 + "' type='video/mp4'></video></body></html>";
     }
 
     private static Object getVideoUrl(String sessionId) {
         if (deviceHost.equals("browserstack")) {
-            return Browserstack.videoUrl(sessionId);
+            return Browserstack.getVideoUrl(sessionId);
         } else if (deviceHost.equals("selenoid")) {
             return SelenoidVideo.getVideoUrl(sessionId);
         }
